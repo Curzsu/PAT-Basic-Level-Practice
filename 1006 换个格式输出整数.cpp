@@ -1,28 +1,28 @@
-#include<bits/stdc++.h>
+#include<bits/stdc++.h>   //
 using namespace std;
 int main(){
 	string s1, s2, s3;
-	char t[10]; //ÓÃÓÚ½«0~9×ª»¯³É×Ö·û´® 
+	char t[10]; //ç”¨äºå°†0~9è½¬åŒ–æˆå­—ç¬¦ä¸² 
 	int n;
 	int temp3;	//B 
 	int temp2;	//S
-	int temp1;	//Êı×Ö 
+	int temp1;	//æ•°å­— 
 	cin >> n;
 	
-		temp3 = n % 10;  //Ëã³ö¸öÎ» 
+		temp3 = n % 10;  //ç®—å‡ºä¸ªä½ 
 		n /= 10;
 		for(int i = 1; i <= temp3; i++){
-		sprintf(t,"%d",i); //Êı×Ö×ª»¯³É×Ö·û 
-		s3 += (string)t;  //½«×Ö·ûÏà¼Ó³É×Ö·û´® 
+		sprintf(t,"%d",i); //æ•°å­—è½¬åŒ–æˆå­—ç¬¦ 
+		s3 += (string)t;  //å°†å­—ç¬¦ç›¸åŠ æˆå­—ç¬¦ä¸² 
 	}
 	
-	temp2 = n % 10; //Ëã³öÊ®Î» 
+	temp2 = n % 10; //ç®—å‡ºåä½ 
 	n /= 10;     
 	for(int i = 1; i <= temp2; i++){
 		s2 += "S"; 
 	}
 	
-	temp1 = n % 10; //Ëã³ö°ÙÎ» 
+	temp1 = n % 10; //ç®—å‡ºç™¾ä½ 
 	for(int i = 1; i <= temp1; i++){
 		s1 += "B"; 
 	}
